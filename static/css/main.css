@@ -3,6 +3,9 @@ html, body{
     color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
     background: url(../img/bg.gif) #2a2e39;
 }
+html{
+    overflow-y: scroll;
+}
 
 .round {
     -moz-border-radius:    10px;
@@ -17,7 +20,7 @@ html, body{
     
     width: 610px;
     margin: 20px auto; 
-/*    margin-bottom: 0px;*/
+    margin-bottom: 8px;
     
     padding: 40px;  
     padding-bottom: 25px;
@@ -27,6 +30,20 @@ html, body{
     -moz-box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);    
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);    
 }
+.copyrights{
+    color: #838eb5;
+    width: 610px;
+    margin: 0 auto;
+    text-align: center;
+    
+    margin-bottom: 15px;
+}
+    .copyrights a {
+        color: #96a2cf;
+    }
+        .copyrights a:hover {
+            color: #adb9e6;
+        }
 
 .params_table{
     width: 100%;
@@ -87,7 +104,7 @@ html, body{
             box-shadow: inset 5px 9px 6px rgba(0, 0, 0, 0.7);
             
             position: relative;
-            margin-top: -351px;
+            margin-top: -356px;
             width: 600px;
             height: 351px;
         }
