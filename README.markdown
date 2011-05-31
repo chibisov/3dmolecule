@@ -2,4 +2,8 @@
 
 При моделировании примитивов использовались формулы 
 [эллипсоида](http://www.wolframalpha.com/input/?i=Ellipsoid) и [эллиптического 
-парабалоида](http://www.wolframalpha.com/input/?i=elliptic+cylinder)
+парабалоида](http://www.wolframalpha.com/input/?i=elliptic+cylinder).
+
+[Посмотреть в действии](http://chibisov.github.com/3dmolecule/) 
+
+![скриншот](http://chibisov.github.com/3dmolecule/static/img/screen.png "Скриншот")
