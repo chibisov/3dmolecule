@@ -4,8 +4,9 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <title>Курсовая по компьютерной графике</title>
     
-    <link rel="stylesheet" id="screen, projection" href="static/plugins/blueprint/screen.css" type="text/css" media="screen" />
-    <link rel="stylesheet" id="screen, projection" href="static/plugins/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen" />
+    <!-- <link rel="stylesheet" id="screen, projection" href="static/plugins/blueprint/screen.css" type="text/css" media="screen" /> -->
+    <!-- <link rel="stylesheet" id="screen, projection" href="static/plugins/blueprint/plugins/fancy-type/screen.css" type="text/css" media="screen" /> -->
+    <link rel="stylesheet" href="static/css/reset.css" />
     <link rel="stylesheet" href="static/css/main.css" />
     
     <script type="text/javascript" src="static/js/jquery-1.6.min.js"></script>
@@ -28,80 +29,47 @@
         
         <div class="under_canvas_content cool_text">
             <form action="./" id="form_params" method="POST">
-                <div class="coordinates_labels_container">
-                    <div class="span-2 prepend-4">X</div>
-                    <div class="span-2">Y</div>
-                    <div class="last">Z</div>
-                </div>
-
-                <div>
-                    <div class="span-4">
-                        <label for="coord_x_turn">Поворот</label>
-                    </div>
-
-                    <div class="to_rotate">
-                        <div class="span-2">
-                            <input type="text" name="coord_x" id="coord_x_turn" value="45" size="4" />&nbsp;º
-                        </div>
-                        <div class="span-2">
-                            <input type="text" name="coord_y" value="45" size="4" />&nbsp;º
-                        </div>
-                        <div class="span-2">
-                            <input type="text" name="coord_z" value="0" size="4" />&nbsp;º
-                        </div>
-                        <div class="last">
-                            <input type="checkbox" id="animate"><label for="animate">&nbsp;Анимация</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="clear"></div>
-
-                <div>
-                    <div class="span-4">
-                        <label for="coord_x_offset">Смещение</label>
-                    </div>
-                    
-                    <div class="to_offset">
-                        <div class="span-2">
-                            <input type="text" name="coord_x" id="coord_x_offset" value="0" size="4" />
-                        </div>
-                        <div class="span-2">
-                            <input type="text" name="coord_y" value="0" size="4" />
-                        </div>
-                        <div class="span-2">
-                            <input type="text" name="coord_z" value="0" size="4" />
-                        </div>
-                        <div class="last">
-                            <input type="button" id="reset_settings" value="Сбросить настройки" />
-                        </div>
-                    </div>
-                </div>
-                <div class="clear"></div>
-
-                <div>
-                    <div class="span-4">
-                        <label for="coord_x_scale">Масштаб</label>
-                    </div>
-                    
-                    <div class="to_scale">
-                        <div class="span-2">
-                            <input type="text" name="coord_x" id="coord_x_scale" value="80" size="4" /><span class="scale_percent">%</span>
-                        </div>
-                        <div class="span-2">
-                            <input type="text" name="coord_y" value="80" size="4" /><span class="scale_percent">%</span>
-                        </div>
-                        <div class="span-2">
-                            <input type="text" name="coord_z" value="80" size="4" /><span class="scale_percent">%</span>
-                        </div>
-                        <div class="last">
-                            <input type="button" id="set_to_default_position" value="В нулевую позицию" />
-                        </div>
-                    </div>
-                </div>
-                <div class="clear"></div>
-                
-                
-                <input type="submit" style="position: absolute; visibility: hidden;" />
+                <table class="params_table">
+                    <thead>
+                        <tr>
+                            <th class="first">&nbsp;</th>
+                            <th>X</th>
+                            <th>Y</th>
+                            <th>Z</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="to_rotate">
+                            <td><label for="coord_x_turn">Поворот</label></td>
+                            <td><input type="text" name="coord_x" id="coord_x_turn" value="45" size="4" />&nbsp;º</td>
+                            <td><input type="text" name="coord_y" value="45" size="4" />&nbsp;º</td>
+                            <td><input type="text" name="coord_z" value="0" size="4" />&nbsp;º</td>
+                            <td><input type="checkbox" id="animate"><label for="animate">&nbsp;Анимация</label></td>
+                        </tr>
+                        <tr class="to_offset">
+                            <td><label for="coord_x_offset">Смещение</label></td>
+                            <td><input type="text" name="coord_x" id="coord_x_offset" value="0" size="4" /></td>
+                            <td><input type="text" name="coord_y" value="0" size="4" /></td>
+                            <td><input type="text" name="coord_z" value="0" size="4" /></td>
+                            <td><input type="button" id="reset_settings" value="Сбросить настройки" /></td>
+                        </tr>
+                        <tr class="to_scale">
+                            <td><label for="coord_x_scale">Масштаб</label></td>
+                            <td><input type="text" name="coord_x" id="coord_x_scale" value="80" size="4" /><span class="scale_percent">%</span></td>
+                            <td><input type="text" name="coord_y" value="80" size="4" /><span class="scale_percent">%</span></td>
+                            <td><input type="text" name="coord_z" value="80" size="4" /><span class="scale_percent">%</span></td>
+                            <td><input type="button" id="set_to_default_position" value="В нулевую позицию" /></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="3">
+                                <input type="submit" style="width: 100%" value="Применить" />
+                            </td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </tbody>
+                </table>
             </form>
         </div>
     </div>

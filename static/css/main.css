@@ -1,4 +1,6 @@
 html, body{
+    font-size: 85%;
+    color:#222;background:#fff;font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;
     background: url(../img/bg.gif) #2a2e39;
 }
 
@@ -26,6 +28,20 @@ html, body{
     box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);    
 }
 
+.params_table{
+    width: 100%;
+}
+    .params_table thead th{
+        text-align: left;
+        padding-left: 1em;
+    }
+        .params_table thead th.first{
+            width: 120px;
+        }
+    .params_table tr td{
+        padding-top: 0.5em;
+    }
+
     .canvas_board_wrapper{
         border: 2px solid rgba(255,255,255,0.7);
         border-top: none;
@@ -49,7 +65,7 @@ html, body{
 /*            background: url(../img/bg_transparent.png);*/
             background: url(../img/blick.png) center -87px no-repeat rgba(255, 255, 255, 0.1);
             height: 34px;
-            padding-top: 6px;
+            padding-top: 10px;
             position: relative;
             margin-top: -40px;
             text-align: center;
