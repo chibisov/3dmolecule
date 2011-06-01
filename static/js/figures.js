@@ -10,16 +10,9 @@
   window.MoleculeLeg = (function() {
     __extends(MoleculeLeg, Figure);
     function MoleculeLeg(options) {
-      var head, head_2, leg, leg_z_offset, x, y, z;
+      var head, leg, leg_z_offset, x, y, z;
       this.options = options;
       head = new Ellipsoid({
-        "radius_x": this.options["head"]["radius"],
-        "radius_y": this.options["head"]["radius"],
-        "radius_z": this.options["head"]["radius"],
-        "color": this.options["head"]["color"],
-        "height": 500
-      });
-      head_2 = new Ellipsoid({
         "radius_x": this.options["head"]["radius"],
         "radius_y": this.options["head"]["radius"],
         "radius_z": this.options["head"]["radius"],

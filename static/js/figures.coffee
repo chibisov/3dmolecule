@@ -7,13 +7,13 @@ class window.MoleculeLeg extends Figure
       "color":    @options["head"]["color"]
       "height":   500
     })
-    head_2 = new Ellipsoid({
-      "radius_x": @options["head"]["radius"]
-      "radius_y": @options["head"]["radius"]
-      "radius_z": @options["head"]["radius"]
-      "color":    @options["head"]["color"]
-      "height":   500
-    })
+    # head_2 = new Ellipsoid({
+    #   "radius_x": @options["head"]["radius"]
+    #   "radius_y": @options["head"]["radius"]
+    #   "radius_z": @options["head"]["radius"]
+    #   "color":    @options["head"]["color"]
+    #   "height":   500
+    # })
     leg = new EllipticCylinder( {
       "radius_x": @options["leg"]["radius"]
       "radius_y": @options["leg"]["radius"]
