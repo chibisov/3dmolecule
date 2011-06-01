@@ -23,7 +23,7 @@ class window.MoleculeLeg extends Figure
     leg_z_offset = @options["head"]["radius"] - @options["leg"]["radius"] / 3
     
     leg.offset(x=0, y=0, z=leg_z_offset)
-    head_2.rotate(x=0, y=90, z=0)
+    # head_2.rotate(x=0, y=90, z=0)
     
     @shapes = [
       head
