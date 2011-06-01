@@ -27,7 +27,6 @@
       });
       leg_z_offset = this.options["head"]["radius"] - this.options["leg"]["radius"] / 3;
       leg.offset(x = 0, y = 0, z = leg_z_offset);
-      head_2.rotate(x = 0, y = 90, z = 0);
       this.shapes = [head, leg];
     }
     return MoleculeLeg;
