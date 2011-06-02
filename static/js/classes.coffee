@@ -26,7 +26,7 @@ class PointsCollection
   
   rotate:(x=0, y=0, z=0) ->  
     # rotates collection
-    koef = 3.1
+    koef = 3.14
     [x_degrees, y_degrees, z_degrees] = [koef*x/180, koef*y/180, koef*z/180]
     # [x_degrees, y_degrees, z_degrees] = [x/180, y/180, z/180]
     

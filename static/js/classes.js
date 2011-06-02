@@ -50,7 +50,7 @@
       if (z == null) {
         z = 0;
       }
-      koef = 3.1;
+      koef = 3.14;
       _ref = [koef * x / 180, koef * y / 180, koef * z / 180], x_degrees = _ref[0], y_degrees = _ref[1], z_degrees = _ref[2];
       _ref2 = this.points;
       _results = [];
